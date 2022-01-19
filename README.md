@@ -9,4 +9,4 @@ Unlike screen scraping, which only copies pixels displayed onscreen, web scrapin
 For example: We want to get data of samsung,realme,redmi,one+ phones. From a web scraping of flipkart or amazon like websites and get previously mentioned data of phones.
 In this code we use the Twitter API to extract the tweets and on that data we doing a sentiment analysis.
 
-![](image/images.jpeg)
+![](image/web_scraping.png)
