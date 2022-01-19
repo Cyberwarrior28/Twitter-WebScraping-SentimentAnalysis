@@ -1,5 +1,5 @@
 # Twitter-WebScraping-SentimentAnalysis
-our project is to extract data from twitter for a particular hashtag then we will analyze the sentiment of the public on twitter.
+Our project is to extract data from twitter for a particular hashtag then we will analyze the sentiment of the public on twitter.
 Web scraping is the process of using bots to extract content and data from a website.
 
 ![](image/twitter_cover1.jpg)
