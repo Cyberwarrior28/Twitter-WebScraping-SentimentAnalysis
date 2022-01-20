@@ -8,10 +8,10 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 
 #Authentication To Twitter API
-consumerKey = "6jHjk1GDikVMcqVPlAVrFMJQk"
-consumerSecret = "4t05f4REXwnKIeaNaNFEPBOvyIJJTFlAviATnPuAoJ0Zl0udqo"
-accessToken = "1464522911390351362-IgevoMwCRK6sdmoVKfdtf5rJYsfDOh"
-accessTokenSecret = "1uJ8Okkcw4oxsEXNp0wWOfHDURtZvkj92MxY3EJC5BBgp"
+consumerKey = "your consumer key of Twitter API"
+consumerSecret = "your consumer Secret of Twitter API"
+accessToken = "your access Token of Twitter API"
+accessTokenSecret = "your Token Secret of Twitter API"
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(auth, wait_on_rate_limit=True)
@@ -29,23 +29,23 @@ negative_list = []
 positive_list = []
 for tweet in tweets:
  
- #print(tweet.text)
- tweet_list.append(tweet.text)
- analysis = TextBlob(tweet.text)
- score = SentimentIntensityAnalyzer().polarity_scores(tweet.text)
- neg = score['neg']
- neu = score['neu']
- pos = score['pos']
- 
- if neg > pos:
-    negative_list.append(tweet.text)
-    negative += 1
- elif pos > neg:
-    positive_list.append(tweet.text)
-    positive += 1
- elif pos == neg:
-    neutral_list.append(tweet.text)
-    neutral += 1
+    #print(tweet.text)
+    tweet_list.append(tweet.text)
+    analysis = TextBlob(tweet.text)
+    score = SentimentIntensityAnalyzer().polarity_scores(tweet.text)
+    neg = score['neg']
+    neu = score['neu']
+    pos = score['pos']
+
+    if neg > pos:
+       negative_list.append(tweet.text)
+       negative += 1
+    elif pos > neg:
+       positive_list.append(tweet.text)
+       positive += 1
+    elif pos == neg:
+       neutral_list.append(tweet.text)
+       neutral += 1
 
 #Function for calculate Percentage
 def percentage(part,whole):
