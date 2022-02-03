@@ -10,3 +10,8 @@ For example: We want to get data of samsung,realme,redmi,one+ phones. From a web
 In this code we use the Twitter API to extract the tweets and on that data we doing a sentiment analysis.
 
 ![](image/web_scraping.png)
+
+Watch The Video For More Details:
+**https://youtu.be/99t-sqI4V**
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/99t-sqI4V_4/0.jpg)](http://www.youtube.com/watch?v=99t-sqI4V_4)
