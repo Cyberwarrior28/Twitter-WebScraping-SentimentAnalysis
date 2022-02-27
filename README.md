@@ -11,6 +11,12 @@ In this code we use the Twitter API to extract the tweets and on that data we do
 
 ![](image/web_scraping.png)
 
+Output Of Program:
+
+![](image/Output.png)
+
+![](image/Output(1).png)
+
 Watch The Video For More Details:
 **https://youtu.be/99t-sqI4V**
 
